@@ -1,0 +1,17 @@
+.jumbotron {
+    
+    margin-bottom: 0rem; 
+    padding-right: 120px;
+    padding-left: 120px
+    
+}
+
+p {
+    color: black;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+}

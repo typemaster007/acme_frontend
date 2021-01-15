@@ -1,0 +1,39 @@
+.column {
+    float: left;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+  }
+
+img {
+    border: double black 3px;
+}
+  
+.row{
+    margin-right: 0px;
+    margin-left: 0px;
+}
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    
+  }
+
+  .card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+    background-color: #37FDFC;
+}
+
+.card-header {
+  padding: .75rem 1.25rem;
+  margin-bottom: 0;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid rgba(0,0,0,.125);
+}

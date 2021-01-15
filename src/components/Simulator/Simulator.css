@@ -1,0 +1,101 @@
+.jumbotron {
+    padding-top: 20px;
+    padding-right: 200px;
+    padding-left: 200px;
+    margin-bottom: 0rem;
+}
+
+span{
+    color:red;
+}
+
+#radio1{
+    float: left;
+    margin-right:5px;
+    padding: 5px;
+}
+#radio2{
+   
+    margin-right:5px;
+    padding: 5px;
+}
+
+#popupdiv{
+    border: solid 2px;
+    border-color: black;
+    border-radius: 5px;
+    background: white;
+    padding:10px;
+}
+
+@media only screen and (max-width: 450px) {
+    
+    .input-group{
+        margin: 0;
+        padding: 0;
+    }
+
+    .input-group input{
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border: none;
+        width: 50vw;
+        background-color: #ffffffff;
+    }
+    .input-group span{
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        top: 0;
+        transform: none;
+        border: 2px solid #F7A231;
+        margin: 0;
+        background-color: #ffffffff;
+    }
+    a {
+        color: red;
+        background-color: #F7A231
+    }
+    
+    a:hover {
+        color: blue;
+        background-color: #F7A231
+    }
+    
+}
+
+@media only screen and (min-width: 450px) {
+    
+    .input-group input{
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border: none;
+        width: 30vw;
+        background-color: #ffffffff;
+    }
+    .input-group span{
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        top: 0;
+        transform: none;
+        border: none;
+        margin: 0;
+        background-color: #ffffffff;
+    }
+    .input-group span:hover{
+        background-color: #F7A231;
+        color: #ffffffff;
+    }
+    .input-group svg:hover{
+        background-color: #F7A231;
+        color: #ffffffff;
+    }
+    .a {
+        color: red;
+        background-color: #F7A231
+    }
+    
+    .a:hover {
+        color: blue;
+        background-color: #F7A231
+    }
+}
