@@ -106,7 +106,11 @@ class Dashboard extends React.Component {
                                         </p></h5>
                                         <hr />
                                         <p className="card-text">
-                                            Sensor Status: {" "} {sensor.status}
+                                            Sensor Status: {" "} <b>{sensor.status}</b>
+                                        </p>
+                                        <hr />
+                                        <p className="card-text">
+                                            Device ID: {" "} {sensor.id}
                                         </p>
                                         <p className="card-text">
                                             Device Type: {" "} {sensor.type}

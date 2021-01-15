@@ -246,7 +246,7 @@ class SimulatorForm extends React.Component {
           className="container"
           ref={this.inputRef}
           style={{
-            padding: "10px",
+            padding: "25px",
             border: "2px solid black",
             borderRadius: "0.25rem",
             backgroundSize: "cover",
@@ -281,10 +281,9 @@ class SimulatorForm extends React.Component {
                 <Popup
                     trigger={
                     <button
-                        className="btn btn-success "
+                        className="btn btn-primary "
                         style={{
                         padding: "5px",
-                        color: "black",
                         margin: "5px",
                         }}
                     >
@@ -296,10 +295,11 @@ class SimulatorForm extends React.Component {
                     {(close) => (
                     <div
                         style={{
-                        border: "5px",
-                        borderColor: "black",
+                        border: "solid 2px",
                         borderRadius: "10px",
                         background: "white",
+                        marginTop: '20px',
+                        padding: "10px"
                         }}
                     >
                         <h2
@@ -330,32 +330,28 @@ class SimulatorForm extends React.Component {
                             style={{ width: "300px", display: "flex" }}
                             />
                         </p>
-                        
-                        <hr />
                         <p style={{ color: "black" }}>
                             Status:{" "}
-                            <textarea
+                            <input
                             className="form-control mb-2 "
                             onChange={this.handleChange}
                             noValidate
-                            placeholder="Article Description"
+                            placeholder="Device Status"
                             name="status"
                             style={{ width: "300px" }}
-                            ></textarea>
+                            ></input>
                         </p>
-                        <hr />
                         <p style={{ color: "black" }}>
                             Type:{" "}
                             <input
                             className="form-control mb-2"
                             onChange={this.handleChange}
                             noValidate
-                            placeholder="Article Author"
+                            placeholder="Device Type"
                             name="type"
                             style={{ width: "300px" }}
                             />
                         </p>
-                        <hr />
                         
                         <p style={{ color: "black" }}>
                             Industry:{" "}
@@ -363,7 +359,7 @@ class SimulatorForm extends React.Component {
                             className="form-control mb-2"
                             onChange={this.handleChange}
                             noValidate
-                            placeholder="Article Author"
+                            placeholder="Industry"
                             name="industry"
                             style={{ width: "300px" }}
                             />
@@ -396,8 +392,6 @@ class SimulatorForm extends React.Component {
                     className="btn btn-primary "
                     style={{
                       padding: "5px",
-                      backgroundColor: "white",
-                      color: "black",
                       margin: "5px",
                     }}
                   >
@@ -408,11 +402,11 @@ class SimulatorForm extends React.Component {
               >
                 {(close) => (
                   <div
-                    style={{
-                      border: "5px",
-                      borderColor: "black",
-                      borderRadius: "10px",
-                      background: "white",
+                  style={{
+                    border: "solid 2px",
+                    borderRadius: "10px",
+                    background: "white",
+                    marginTop: '25px'
                     }}
                   >
                     <h2
@@ -426,7 +420,7 @@ class SimulatorForm extends React.Component {
                     </h2>
                     <div
                       className="validmsg"
-                      style={{ margin: "30px" }}
+                      style={{ margin: "20px" }}
                     >
                       <p
                         className="card-title"
@@ -449,36 +443,33 @@ class SimulatorForm extends React.Component {
                           className="form-control mb-2"
                           onChange={this.handleChange}
                           noValidate
-                          placeholder="Article Author"
+                          placeholder="Device ID"
                           name="id"
                           style={{ width: "300px" }}
                         />
                       </p>
-                      <hr />
                       <p style={{ color: "black" }}>
                         Status:{" "}
-                        <textarea
+                        <input
                           className="form-control mb-2 "
                           onChange={this.handleChange}
                           noValidate
-                          placeholder="Article Description"
+                          placeholder="Device Status"
                           name="status"
                           style={{ width: "300px" }}
-                        ></textarea>
+                        ></input>
                       </p>
-                      <hr />
                       <p style={{ color: "black" }}>
                         Type:{" "}
                         <input
                           className="form-control mb-2"
                           onChange={this.handleChange}
                           noValidate
-                          placeholder="Article Author"
+                          placeholder="Device Type"
                           name="type"
                           style={{ width: "300px" }}
                         />
                       </p>
-                      <hr />
                       
                       <p style={{ color: "black" }}>
                         Industry:{" "}
@@ -486,7 +477,7 @@ class SimulatorForm extends React.Component {
                           className="form-control mb-2"
                           onChange={this.handleChange}
                           noValidate
-                          placeholder="Article Author"
+                          placeholder="Industry"
                           name="industry"
                           style={{ width: "300px" }}
                         />
@@ -520,8 +511,6 @@ class SimulatorForm extends React.Component {
                     className="btn btn-primary"
                     style={{
                       padding: "5px",
-                      backgroundColor: "white",
-                      color: "black",
                       margin: "5px",
                     }}
                     noValidate
@@ -534,10 +523,10 @@ class SimulatorForm extends React.Component {
                 {(close) => (
                   <div
                     style={{
-                      border: "5px",
-                      borderColor: "black",
-                      borderRadius: "10px",
-                      background: "white",
+                        border: "solid 2px",
+                        borderRadius: "10px",
+                        background: "white",
+                        padding: "25px"
                     }}
                   >
                     <h2
