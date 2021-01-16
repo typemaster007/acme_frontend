@@ -34,7 +34,7 @@ function LandingPage(props) {
           <div className="card-body">
             <h5 className="card-title">Sensor Data Simulation</h5>
             <p className="card-text">Create, update and delete sensor devices</p>
-            <a href="/users" className="btn btn-primary">Submit data</a>
+            <a href="/simulator" className="btn btn-primary">Submit data</a>
           </div>
         </div>
 
@@ -45,7 +45,7 @@ function LandingPage(props) {
           <div className="card-body">
             <h5 className="card-title">Live Sensor data dashboard</h5>
             <p className="card-text">Dynamic visualization of sensor status</p>
-            <a href="/scientists" className="btn btn-primary">View Sensor data</a>
+            <a href="/dashboard" className="btn btn-primary">View Sensor data</a>
           </div>
         </div>        
     </div>
