@@ -60,27 +60,7 @@ class SimulatorForm extends React.Component {
     };
   }
 
-  componentDidMount() {
-    console.clear();
-    if (localStorage.getItem("token")) {
-    } else {
-      this.props.history.push("/login");
-    }
-    
-
-    this.inputRef.current.focus();
-
-    axios
-      .get("https://rentalvista-api.herokuapp.com/getblog")
-      .then((response) => {
-        this.setState({ posts: response.data });
-      })
-      .catch((error) => {
-        this.setState({ errorMsg: "Error retrieving data" });
-      }).finally(() => {
-        console.clear()
-      });
-  }
+  
 
   handleChange = (event) => {
     event.preventDefault();

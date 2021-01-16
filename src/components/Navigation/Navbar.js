@@ -35,9 +35,9 @@ function NavigationBar(props) {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto">
             <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/simulator">IOT Sensor Simulation</Nav.Link>
+            <Nav.Link href="/dashboard">Prototype Dashboard</Nav.Link>
             
-            <Nav.Link href="/dashboard">IOT Sensor Simulation</Nav.Link>
-            <Nav.Link href="/simulator">Prototype Dashboard</Nav.Link>
     
           </Nav>
         </Navbar.Collapse>

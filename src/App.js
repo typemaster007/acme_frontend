@@ -7,8 +7,8 @@ import {
 } from "react-router-dom";
 
 import LandingPage from './components/Landing/Landing';
-import Dashboard from './components/Simulator/Simulator';
-import Simulator from './components/Dashboard/Dashboard';
+import Simulator from './components/Simulator/Simulator';
+import Dashboard from './components/Dashboard/Dashboard';
 import "./App.css";
 
 
