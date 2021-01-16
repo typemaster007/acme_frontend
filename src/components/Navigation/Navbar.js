@@ -1,24 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./Navbar.css";
-import { Navbar, Nav, Form, FormControl, Button, NavDropdown } from "react-bootstrap";
+import { Navbar, Nav} from "react-bootstrap";
 
 
 function NavigationBar(props) {
-    const [message, setMessage] = useState({ title: "", body: "", show: false });
-    const [showEdit, setShowEdit] = useState(false);
-  
-    
-  
-    const renderComponent = (msg) => {
-      setMessage({
-        title: msg.title,
-        body: msg.body,
-        show: message.show ? false : true,
-      });
-    };
-  
-    
-    
   
     return (
         <Navbar

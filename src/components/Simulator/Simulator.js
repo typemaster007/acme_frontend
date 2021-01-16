@@ -1,14 +1,11 @@
 import React from 'react';
 //import { Container } from "react-bootstrap";
-import Jumbotron from 'react-bootstrap/Jumbotron'
 import axios from 'axios';
 import Popup from "reactjs-popup";
-import {Link} from 'react-router-dom';
 import "./Simulator.css"
 
 let flag = 0;
 
-const MAX_LENGTH = 25; //Character limit for card view text in Device page
 
 const validateForm = (errors) => {
   let valid = false;
@@ -24,17 +21,7 @@ const validateForm = (errors) => {
   );
   return valid;
 };
-const countErrors = (errors) => {
-  let count = 0;
-  Object.values(errors).forEach((val) => {
-    if (val.length > 0) {
-      if (val !== "set") {
-        count = count + 1;
-      }
-    }
-  });
-  return count;
-};
+
 
 class SimulatorForm extends React.Component {
   constructor(props) {
@@ -135,7 +122,6 @@ class SimulatorForm extends React.Component {
         .post("http://localhost:5000/createdevice", this.state)
         .then((response) => {
           //console.log(response)
-          this.componentDidMount();
 
           if (response.data === "Device already present, cannot add") {
             this.play("Device title already present, enter a different name");
@@ -159,7 +145,6 @@ class SimulatorForm extends React.Component {
     .put(url, this.state)
     .then((response) => {
         //console.log(response)
-        this.componentDidMount();
         if (response.data === "Device updated Successfully!") {
         this.play("Device Updated Successfully");
         } else if (response.data === "Device not found, check if it is present in the database") {
@@ -181,11 +166,13 @@ class SimulatorForm extends React.Component {
       axios
         .delete(url, this.state)
         .then((response) => {
-          //console.log(response)
-          this.componentDidMount();
+          
           if (response.data === "Please enter the device ID") {
             this.play("Please enter the device ID");
             }
+          else if(response.data === "Device not found!") {
+            this.play("Device not found! Incorrect Device ID");
+          }
           else{
           this.play("Device deleted successfully!"); }
           this.cancelCourse(); 
@@ -197,11 +184,10 @@ class SimulatorForm extends React.Component {
   }
 
   resetForm = () => {
-    this.setState({ title: "", author: "", desc: "" });
+    this.setState({ name: "", id: "", status: "" });
   };
   cancelCourse = () => {
-    document.getElementById("create-course-form").reset();
-    this.setState({ title: "", author: "", desc: "" });
+    this.setState({ name: "", id: "", status: "" });
     //console.log("Log" +this.state.title)
   };
 
@@ -211,8 +197,6 @@ class SimulatorForm extends React.Component {
   }
 
   render() {
-    const { errors, formValid } = this.state;
-    const displayBlog = this.state.posts;
 
     return (
       <div>

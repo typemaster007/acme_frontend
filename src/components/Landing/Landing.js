@@ -6,13 +6,7 @@ import "./Landing.css"
 
 
 function LandingPage(props) {
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: "smooth",
-    });
-  };
+  
   return(
     <div id='body' style={{backgroundColor:"#c9d6d6"}}>
         <div className="card text-center"  style={{marginLeft:'80px',marginRight:'80px',backgroundColor:"#f6f6f6"}}>
